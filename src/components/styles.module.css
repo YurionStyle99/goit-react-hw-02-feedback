@@ -1,0 +1,70 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: darkgray;
+  border-radius: 10%;
+  border: 2px solid;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #eee;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-good {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn-neutral {
+  background-color: #2196F3;
+  color: white;
+}
+
+.btn-bad {
+  background-color: #f44336;
+  color: white;
+}
+
+.stats {
+  margin-top: 30px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.stats p {
+  margin-bottom: 10px;
+}
+
+.stats__label {
+  font-weight: bold;
+}
+
+.stats__value {
+  margin-left: 10px;
+}
+
+.stats__value--positive {
+  color: green;
+}
+
+.stats__value--negative {
+  color: red;
+}
+
+.notification{
+  font-size: 24px;
+  color: #000000;
+  font-weight: bold;
+}
