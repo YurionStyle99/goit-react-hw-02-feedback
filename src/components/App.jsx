@@ -11,8 +11,8 @@ export class App extends Component {
     bad: 0,
   };
 
-handleFeedback = e => {
-    const { name } = e.target;
+handleFeedback = event => {
+    const { name } = event.target;
     this.setState(prev => ({
       [name]: prev[name] + 1,
     }));
@@ -43,7 +43,9 @@ handleFeedback = e => {
             options={options}
             onLeaveFeedback={this.handleFeedback}
           />
-         {totalFeedback<=0&&<Notification message="There is no feedback" />}
+         {totalFeedback<=0&&
+         <Notification message="There is no feedback" />
+         }
         </Section>
         {totalFeedback>0&& 
      <Section title="Statistics">
